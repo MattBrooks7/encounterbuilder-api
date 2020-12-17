@@ -20,6 +20,20 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# production:
+#    <<: *default
+#    database: db/production.sqlite3
+
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: 'encounterbuilder-api'
+  adapter: postgresql
+
+# production:
+#   <<: *default
+#   database: '2020-group2-viz-teams-tracker-back'
+#   adapter: postgresql
+#   encoding: unicode
+#   username: postgres
+#   password: password
+#   pool: 5

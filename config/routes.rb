@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  namespace defaults: ( format: :json) do
+  namespace :api defaults: ( format: :json) do
     namespace :monsters do 
       get :index
       get :show

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  namespace :api, defaults: ( format: :json) do
+
     namespace :monsters do 
       get :index
       get :show
@@ -8,5 +8,4 @@ Rails.application.routes.draw do
       patch :update
       delete :destroy
     end
-  end
 end
